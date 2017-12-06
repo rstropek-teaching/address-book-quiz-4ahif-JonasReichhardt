@@ -13,8 +13,10 @@ function post(req, res, next) {
             next(new restify_errors_1.BadRequestError('ID has to be a numeric value'));
         }
         else {
-            const newCustomer = { id: newCustomerId,
-                firstName: req.body.firstName, lastName: req.body.lastName, email: req.body.email };
+            const newCustomer = {
+                id: newCustomerId,
+                firstName: req.body.firstName, lastName: req.body.lastName, email: req.body.email
+            };
             data_1.persons.push(newCustomer);
             res.send(http_status_codes_1.CREATED, newCustomer);
         }

@@ -5,4 +5,4 @@ export interface IPerson {
   email: string;
 }
 
-export let persons: IPerson[];
+export let persons: IPerson[] = [];

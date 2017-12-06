@@ -10,5 +10,5 @@ server.use(restify_1.plugins.bodyParser());
 // Add routes
 server.get('/api/contacts', get_1.getAll);
 server.post('/api/contacts', post_1.post);
-server.del('/api/customers/:id', delete_1.deleteSingle);
+server.del('/api/contacts/:id', delete_1.deleteSingle);
 server.listen(8080, () => console.log('API is listening'));
